@@ -33,6 +33,6 @@ jobs:
         pwd: ${{ secrets.PASSWORD }}
         sckey: ${{ secrets.SCKEY }}
         RealAddress: ${{ secrets.REALADDRESS }}
-        RealProvince_City_County: ${{ REALPROVINCE_CITY_COUNTY }}
+        RealProvince_City_County: ${{ secrets.REALPROVINCE_CITY_COUNTY }}
       run:
         python AutoClockIn.py $usr $pwd $sckey $RealAddress $RealProvince_City_County
