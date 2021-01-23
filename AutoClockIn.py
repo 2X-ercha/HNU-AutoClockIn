@@ -32,7 +32,7 @@ RealAddress = os.getenv("RealAddress")
 l = os.getenv("RealProvince_City_County").split(",")
 RealCity = l[1]
 RealCounty = l[2]
-RealProvince = l[3]
+RealProvince = l[0]
 
 # step 1: 获取验证码Token及图片
 
