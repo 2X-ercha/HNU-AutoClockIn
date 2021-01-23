@@ -63,8 +63,8 @@ def ClockIn():
         # step 2: 模拟登录操作
 
         data = {
-            "Code": "202001120130",
-            "Password": "s2002092517S",
+            "Code": usr,
+            "Password": pwd,
             "Token": token,
             "VerCode": result
         }
@@ -81,7 +81,7 @@ def ClockIn():
 
             data = {
                 "BackState": 1,
-                "MorningTemp": "36.5",
+                "MorningTemp": "36.4",
                 "NightTemp": "36.5",
                 "RealAddress": RealAddress,
                 "RealCity": RealCity,
