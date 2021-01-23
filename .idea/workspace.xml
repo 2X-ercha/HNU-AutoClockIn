@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f711b6-e896-442a-984c-f2c49dbe807c" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoClockIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoClockIn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/HNU_AutoClockIn.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/HNU_AutoClockIn.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
