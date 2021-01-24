@@ -37,8 +37,6 @@ RealProvince = l[0]
 # step 1: 获取验证码Token及图片
 
 def ClockIn():
-    print(usr,pwd,sckey,RealProvince,RealCity,RealCounty,RealAddress)
-    '''
     try:
         token_json = requests.get("https://fangkong.hnu.edu.cn/api/v1/account/getimgvcode", headers=headers_1)
 
@@ -101,7 +99,6 @@ def ClockIn():
         print("Error")
         requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡失败啦！&desp=打卡失败，正在重试")
         ClockIn()
-    '''
 
 if __name__ == '__main__':
     ClockIn()

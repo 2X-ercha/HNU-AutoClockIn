@@ -29,7 +29,7 @@ jobs:
         pip install requests
     - name: ClockIn #打卡
       env:
-        usr: ${{ secrets.UESR }}
+        usr: ${{ secrets.USER }}
         pwd: ${{ secrets.PASSWORD }}
         sckey: ${{ secrets.SCKEY }}
         RealAddress: ${{ secrets.REALADDRESS }}
