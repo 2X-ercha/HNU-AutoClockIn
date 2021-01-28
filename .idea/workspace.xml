@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f711b6-e896-442a-984c-f2c49dbe807c" name="默认的" comment="修正">
+    <list default="true" id="42f711b6-e896-442a-984c-f2c49dbe807c" name="默认的" comment="暂停">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoClockIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoClockIn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611452848750</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="暂停">
+      <created>1611844179942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611844179942</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试环境变量" />
     <MESSAGE value="修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正" />
+    <MESSAGE value="暂停" />
+    <option name="LAST_COMMIT_MESSAGE" value="暂停" />
   </component>
 </project>

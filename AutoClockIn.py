@@ -80,14 +80,39 @@ def ClockIn():
             # step 3: 模拟打卡操作
 
             data = {
-                "BackState": 1,
-                "MorningTemp": "36.4",
-                "NightTemp": "36.5",
-                "RealAddress": RealAddress,
-                "RealCity": RealCity,
-                "RealCounty": RealCounty,
-                "RealProvince": RealProvince,
-                "tripinfolist": []
+                # "Temperature":null,
+                "RealProvince":RealProvince,
+                "RealCity":RealCity,
+                "RealCounty":RealCounty,
+                "RealAddress":RealAddress,
+                "IsUnusual":"0",
+                "UnusualInfo":"",
+                "IsTouch":"0",
+                "IsInsulated":"0",
+                "IsSuspected":"0",
+                "IsDiagnosis":"0",
+                "tripinfolist":[
+                    {
+                        "aTripDate":"",
+                        "FromAdr":"",
+                        "ToAdr":"",
+                        "Number":"",
+                        "trippersoninfolist":[]
+                    }
+                ],
+                "toucherinfolist":[],
+                "dailyinfo":
+                    {
+                        "IsVia":"0",
+                        "DateTrip":""
+                    },"IsInCampus":"0",
+                "IsViaHuBei":"0",
+                "IsViaWuHan":"0",
+                "InsulatedAddress":"",
+                "TouchInfo":"",
+                "IsNormalTemperature":"1"
+                # "Longitude":null,
+                # "Latitude":null
             }
 
             response = session.post("https://fangkong.hnu.edu.cn/api/v1/clockinlog/add", headers=headers_2, data=json.dumps(data))
