@@ -79,7 +79,7 @@ def ClockIn():
         else:
             # step 3: 模拟打卡操作
 
-            data = {
+            data1 = { # 假期版本
                 # "Temperature":null,
                 "RealProvince":RealProvince,
                 "RealCity":RealCity,
@@ -115,7 +115,18 @@ def ClockIn():
                 # "Latitude":null
             }
 
-            response = session.post("https://fangkong.hnu.edu.cn/api/v1/clockinlog/add", headers=headers_2, data=json.dumps(data))
+            date2 = { #上学期间版本
+                "BackState": 1,
+                "MorningTemp": "36.5",
+                "NightTemp": "36.5",
+                "RealAddress": RealAddress,
+                "RealCity": RealCity,
+                "RealCounty": RealCounty,
+                "RealProvince": RealProvince,
+                "tripinfolist": []
+            }
+
+            response = session.post("https://fangkong.hnu.edu.cn/api/v1/clockinlog/add", headers=headers_2, data=json.dumps(data2))
 
             msg = response.json()["msg"]
             print(msg)
