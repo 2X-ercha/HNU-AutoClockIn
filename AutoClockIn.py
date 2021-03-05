@@ -115,7 +115,7 @@ def ClockIn():
                 # "Latitude":null
             }
 
-            date2 = { #上学期间版本
+            data2 = { #上学期间版本
                 "BackState": 1,
                 "MorningTemp": "36.5",
                 "NightTemp": "36.5",
