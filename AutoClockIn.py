@@ -74,7 +74,7 @@ def ClockIn():
 
         if response.json()["code"] != 0:
             print("验证码错误")
-            requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡失败啦&desp=验证码错误，正在重试")
+            # requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡失败啦&desp=验证码错误，正在重试")
             ClockIn()
         else:
             # step 3: 模拟打卡操作
@@ -130,10 +130,10 @@ def ClockIn():
 
             msg = response.json()["msg"]
             print(msg)
-            requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡成功啦！&desp=" + msg)
+            # requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡成功啦！&desp=" + msg)
     except:
         print("Error")
-        requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡失败啦！&desp=打卡失败，正在重试")
+        # requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡失败啦！&desp=打卡失败，正在重试")
         ClockIn()
 
 if __name__ == '__main__':
