@@ -31,7 +31,6 @@ jobs:
       env:
         usr: ${{ secrets.USER }}
         pwd: ${{ secrets.PASSWORD }}
-        sckey: ${{ secrets.SCKEY }}
         RealAddress: ${{ secrets.REALADDRESS }}
         RealProvince_City_County: ${{ secrets.REALPROVINCE_CITY_COUNTY }}
       run:
