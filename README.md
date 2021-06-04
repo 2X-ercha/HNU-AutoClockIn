@@ -12,7 +12,7 @@
 
 # 使用手册
 
-**详细使用说明书地址：https://noionion.top/3355.html**
+**详细使用说明书地址：https://noionion.top/3355.html （无了）**
 
 先fork本仓库，然后在自己的仓库中进行设置
 
