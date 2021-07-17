@@ -36,7 +36,6 @@ headers_3 = {
     } # 百度OCR识别验证码
 
 # 获取变量
-
 usr = os.getenv("usr")
 pwd = os.getenv("pwd")
 RealAddress = os.getenv("RealAddress")
@@ -44,7 +43,6 @@ l = os.getenv("RealProvince_City_County").split(",")
 RealCity = l[1]
 RealCounty = l[2]
 RealProvince = l[0]
-
 
 # step 1: 获取验证码Token及图片
 
@@ -79,7 +77,6 @@ def ClockIn():
         result = response.json()['data']['words_result'][0]['words']
 
         # step 2: 模拟登录操作
-
         data = {
             "Code": usr,
             "Password": pwd,
@@ -89,6 +86,8 @@ def ClockIn():
 
         session = requests.Session()
         response = session.post("https://fangkong.hnu.edu.cn/api/v1/account/login", headers=headers_2, data=json.dumps(data))
+
+        InCampus = response.json()["data"]["IsShowBackCampus"]
 
         if response.json()["code"] != 0:
             print("验证码错误")
@@ -143,7 +142,7 @@ def ClockIn():
                 "tripinfolist": []
             }
 
-            if(l == ['湖南省', '长沙市', '岳麓区']): 
+            if(InCampus): 
                 print('在校')
                 response = session.post("https://fangkong.hnu.edu.cn/api/v1/clockinlog/add", headers=headers_2, data=json.dumps(data2))
             else: 
